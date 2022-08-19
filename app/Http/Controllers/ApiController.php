@@ -23,6 +23,30 @@ class ApiController extends Controller
         return response()->json($comuni);
     }
 
+    public function comuniProvincia($provincia)
+    {
+        $comuni = [];
+        foreach($this->file_decoded as $row) {
+            if($row->sigla_automobilistica == $provincia) {
+                array_push($comuni, $row->denominazione_in_italiano);
+            }
+        }
+        sort($comuni);
+        return response()->json($comuni);
+    }
+
+    public function comuniRegione($regione)
+    {
+        $comuni = [];
+        foreach($this->file_decoded as $row) {
+            if($row->denominazione_regione == $regione) {
+                array_push($comuni, $row->denominazione_in_italiano);
+            }
+        }
+        sort($comuni);
+        return response()->json($comuni);
+    }
+
     public function province()
     {
         $province = [];
@@ -45,5 +69,17 @@ class ApiController extends Controller
         }
         sort($regioni);
         return response()->json($regioni);
+    }
+
+    public function sigleAuto()
+    {
+        $sigle = [];
+        foreach($this->file_decoded as $row) {
+            if(!in_array($row->sigla_automobilistica, $sigle)) {
+                array_push($sigle, $row->sigla_automobilistica);
+            }
+        }
+        sort($sigle);
+        return response()->json($sigle);
     }
 }
