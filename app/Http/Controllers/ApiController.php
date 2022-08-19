@@ -59,6 +59,18 @@ class ApiController extends Controller
         return response()->json($province);
     }
 
+    public function provinceRegione($regione)
+    {
+        $province = [];
+        foreach($this->file_decoded as $row) {
+            if($row->flag_comune_capoluogo_di_provinciacitta_metropolitanalibero_consorzio === 1 && $row->denominazione_regione == $regione) {
+                array_push($province, $row->denominazione_in_italiano);
+            }
+        }
+        sort($province);
+        return response()->json($province);
+    }
+
     public function regioni()
     {
         $regioni = [];
