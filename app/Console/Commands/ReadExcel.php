@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use File;
+use Str;
 
 class ReadExcel extends Command
 {
@@ -23,7 +24,7 @@ class ReadExcel extends Command
 
     private function _returnFormaCellValue($string)
     {
-        return trim(preg_replace('/\s\s+/', ' ', $string));
+        return Str::slug($string, '_');
     }
 
     /**
