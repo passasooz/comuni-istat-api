@@ -29,7 +29,7 @@ class ApiController extends Controller
         foreach($this->file_decoded as $row) {
             $codici[$row->denominazione_in_italiano] = $row->codice_comune_formato_numerico;
         }
-        asort($codici);
+        ksort($codici);
         return response()->json($codici);
     }
 
