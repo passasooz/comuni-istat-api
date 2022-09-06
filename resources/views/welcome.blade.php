@@ -16,6 +16,13 @@
             p.lead {
                 word-wrap:break-word;
             }
+            svg > rect {
+                position: relative;
+                top: 50%;
+                -webkit-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                transform: translateY(50%);
+            }
         </style>
     </head>
     <body class="bg-clouds">
