@@ -20,8 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/comuni', [ApiController::class, 'comuni']);
-//Route::get('/comuni/provincia/{provincia}', [ApiController::class, 'comuniProvincia']);
-//Route::get('/comuni/regione/{regione}', [ApiController::class, 'comuniRegione']);
+Route::get('/comuni/codici', [ApiController::class, 'comuniCodici']);
+Route::get('/comune/{codicecomune}', [ApiController::class, 'comuneCompleto']);
 Route::get('/province', [ApiController::class, 'province']);
 Route::get('/province/{regione}', [ApiController::class, 'provinceRegione']);
 Route::get('/provincia/{provincia}/comuni', [ApiController::class, 'comuniProvincia']);

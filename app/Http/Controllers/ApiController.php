@@ -23,6 +23,25 @@ class ApiController extends Controller
         return response()->json($comuni);
     }
 
+    public function comuniCodici()
+    {
+        $codici = [];
+        foreach($this->file_decoded as $row) {
+            $codici[$row->denominazione_in_italiano] = $row->codice_comune_formato_numerico;
+        }
+        asort($codici);
+        return response()->json($codici);
+    }
+
+    public function comuneCompleto($codicecomune)
+    {
+        foreach($this->file_decoded as $row) {
+            if($row->codice_comune_formato_numerico == $codicecomune) {
+                return response()->json($row);
+            }
+        }
+    }
+
     public function comuniProvincia($provincia)
     {
         $comuni = [];
