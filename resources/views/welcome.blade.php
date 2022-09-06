@@ -33,7 +33,7 @@
         <main>
             <div class="container">
                 <div class="row">
-                    <div class="col-8 offset-2">
+                    <div class="col-12 col-md-8 offset-md-2">
                         <div class="accordion" id="API">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="comuni">
@@ -173,7 +173,7 @@
         <footer class="py-5 mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 offset-2">
+                    <div class="col-12 col-md-8 offset-md-2">
                         <div class="row">
                         <div class="col-6 d-flex align-items-center justify-content-start">
                             <a href="https://github.com/passasooz/comuni-istat-api" target="_blank" class="pe-3">
