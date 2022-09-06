@@ -13,6 +13,9 @@
             .bg-clouds {
                 background-color:#ecf0f1;
             }
+            p.lead {
+                word-wrap:break-word;
+            }
         </style>
     </head>
     <body class="bg-clouds">
