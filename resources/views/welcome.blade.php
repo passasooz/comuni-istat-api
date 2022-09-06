@@ -31,7 +31,7 @@
                 <div class="row vh-50">
                     <div class="col-12 d-flex flex-column align-items-center justify-content-center">
                         <h1>Comuni ISTAT API</h1>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 3 2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 3 1">
                             <rect width="3" height="0.2" fill="#009246"/>
                             <rect width="2" height="0.2" x="1" fill="#fff"/>
                             <rect width="1" height="0.2" x="2" fill="#ce2b37"/>
