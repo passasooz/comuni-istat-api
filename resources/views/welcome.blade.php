@@ -100,7 +100,7 @@
                                 </h2>
                                 <div id="provinceRegioneCollapse" class="accordion-collapse collapse" aria-labelledby="provinceRegione" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/province/Lombardia" target="_blank">https://comuni-istat-api.herokuapp.com/api/province/Lombardia</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/province/Lombardia" target="_blank">https://comuni-istat-api.herokuapp.com/api/province/{regione}</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Parametro: nome della regione (es. Lombardia)</p>
                                         <p>Risposta: array</p>
@@ -115,7 +115,7 @@
                                 </h2>
                                 <div id="provinceComuniCollapse" class="accordion-collapse collapse" aria-labelledby="provinceComuni" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/provincia/BG/comuni" target="_blank">https://comuni-istat-api.herokuapp.com/api/provincia/BG/comuni</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/provincia/BG/comuni" target="_blank">https://comuni-istat-api.herokuapp.com/api/provincia/{sigla}/comuni</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Parametro: sigla della provincia (es. BG)</p>
                                         <p>Risposta: array</p>
@@ -144,7 +144,7 @@
                                 </h2>
                                 <div id="regioneComuniCollapse" class="accordion-collapse collapse" aria-labelledby="regioneComuni" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/regione/Lombardia/comuni" target="_blank">https://comuni-istat-api.herokuapp.com/api/regione/Lombardia/comuni</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/regione/Lombardia/comuni" target="_blank">https://comuni-istat-api.herokuapp.com/api/regione/{regione}/comuni</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Parametro: nome della regione (es. Lombardia)</p>
                                         <p>Risposta: array</p>
