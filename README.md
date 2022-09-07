@@ -19,7 +19,7 @@ All requests with method **GET** and **HTTPS** protocol
 | Municipalities of a region | [https://comuni-istat-api.herokuapp.com/api/regione/{regionName}/comuni][comuniRegone] | Array [] | Region name
 | Provinces name (short) or Car Codes | [https://comuni-istat-api.herokuapp.com/api/sigle-auto][carCodes] | Array []
 
-#### This collection is extract from an Excel published by **ISTAT** (Italian National Istitute of Statistics)
+#### Data are extracted from an Excel published by **ISTAT** (Italian National Istitute of Statistics)
 
 ## License
 
