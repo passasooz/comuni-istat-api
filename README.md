@@ -4,7 +4,7 @@
 
 ## Endpoints
 
-Each endpoint returns dataset in **JSON FORMAT**
+Each endpoint returns dataset in **JSON FORMAT**\
 All requests with method **GET** and **HTTPS** protocol
 
 | RESULT | URL | RESPONSE | PARAMS |
