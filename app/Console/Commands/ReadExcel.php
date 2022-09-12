@@ -22,9 +22,19 @@ class ReadExcel extends Command
      */
     protected $description = 'Convert Excel to JSON data';
 
-    private function _returnFormaCellValue($string)
+    private function _returnFormatColumnValue($string)
     {
         return Str::slug($string, '_');
+    }
+
+    private function _returnFormatCellValue($string)
+    {
+        if(str_contains($string, '/')) {
+            $string = preg_replace('([^\/]+$)', '', $string);
+            return trim(str_replace('/', '', $string));
+        }
+
+        return $string;
     }
 
     /**
@@ -49,7 +59,7 @@ class ReadExcel extends Command
                 foreach ($cellIterator as $cell) {
                     $cells[] = $cell->getValue();
                     if($index === 1) {
-                        array_push($columns, self::_returnFormaCellValue($cell->getValue()));
+                        array_push($columns, self::_returnFormatColumnValue($cell->getValue()));
                     }
                 }
                 if($index !== 1) {
@@ -60,7 +70,7 @@ class ReadExcel extends Command
             foreach($rows as $index => $row) {
                 $item = [];
                 foreach($row as $i => $value) {
-                    $item[$columns[$i]] = $value;
+                    $item[$columns[$i]] = self::_returnFormatCellValue($value);
                 }
                 $data[] = $item;
                 $this->newLine();
