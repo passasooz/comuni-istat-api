@@ -49,9 +49,12 @@ class ReadExcel extends Command
     {
         try{
             $this->line('starting extraction..');
+            $this->line('download data from ISTAT source');
             $file_contents = file_get_contents($this->external_url);
+            $this->line('putting data into local storage');
             Storage::put('Elenco-comuni-italiani.xls', $file_contents);
             $path = storage_path('Elenco-comuni-italiani.xls');
+            $this->line('loading Excel..');
             $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($path);
             $worksheet = $spreadsheet->getActiveSheet();
             $columns = [];
