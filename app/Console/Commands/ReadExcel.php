@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use File;
 use Str;
+use Storage;
 
 class ReadExcel extends Command
 {
@@ -14,6 +15,8 @@ class ReadExcel extends Command
      * @var string
      */
     protected $signature = 'excel:json';
+
+    protected $external_url = 'https://www.istat.it/storage/codici-unita-amministrative/Elenco-comuni-italiani.xls';
 
     /**
      * The console command description.
@@ -46,6 +49,8 @@ class ReadExcel extends Command
     {
         try{
             $this->line('starting extraction..');
+            $file_contents = file_get_contents($this->external_url);
+            Storage::put('Elenco-comuni-italiani.xls', $file_contents);
             $path = storage_path('Elenco-comuni-italiani.xls');
             $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($path);
             $worksheet = $spreadsheet->getActiveSheet();
