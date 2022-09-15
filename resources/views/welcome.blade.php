@@ -54,7 +54,7 @@
                                 </h2>
                                 <div id="comuniCollapse" class="accordion-collapse collapse" aria-labelledby="comuni" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/comuni" target="_blank">https://comuni-istat-api.herokuapp.com/api/comuni</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/comuni" target="_blank">https://comuni-istat-api.belicedigital.com/api/comuni</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Risposta: Array</p>
                                     </div>
@@ -68,7 +68,7 @@
                             </h2>
                             <div id="codiciCollapse" class="accordion-collapse collapse" aria-labelledby="codici" data-bs-parent="#API">
                                 <div class="accordion-body bg-light">
-                                    <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/comuni/codici" target="_blank">https://comuni-istat-api.herokuapp.com/api/comuni/codici</a></p>
+                                    <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/comuni/codici" target="_blank">https://comuni-istat-api.belicedigital.com/api/comuni/codici</a></p>
                                     <p>Schema: HTTP || HTTPS</p>
                                     <p>Risposta: object|key:value</p>
                                 </div>
@@ -82,7 +82,7 @@
                                 </h2>
                                 <div id="comuneDettaglioCollapse" class="accordion-collapse collapse" aria-labelledby="comuneDettaglio" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/comune/1001" target="_blank">https://comuni-istat-api.herokuapp.com/api/comune/{codiceComune}</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/comune/1001" target="_blank">https://comuni-istat-api.belicedigital.com/api/comune/{codiceComune}</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Parametro: codice del comune (es. 1001)</p>
                                         <p>Risposta: object|key:value</p>
@@ -97,7 +97,7 @@
                                 </h2>
                                 <div id="provinceCollapse" class="accordion-collapse collapse" aria-labelledby="province" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/province" target="_blank">https://comuni-istat-api.herokuapp.com/api/province</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/province" target="_blank">https://comuni-istat-api.belicedigital.com/api/province</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Risposta: array</p>
                                     </div>
@@ -111,7 +111,7 @@
                                 </h2>
                                 <div id="provinceRegioneCollapse" class="accordion-collapse collapse" aria-labelledby="provinceRegione" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/province/Lombardia" target="_blank">https://comuni-istat-api.herokuapp.com/api/province/{regione}</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/province/Lombardia" target="_blank">https://comuni-istat-api.belicedigital.com/api/province/{regione}</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Parametro: nome della regione (es. Lombardia)</p>
                                         <p>Risposta: array</p>
@@ -126,7 +126,7 @@
                                 </h2>
                                 <div id="provinceComuniCollapse" class="accordion-collapse collapse" aria-labelledby="provinceComuni" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/provincia/BG/comuni" target="_blank">https://comuni-istat-api.herokuapp.com/api/provincia/{sigla}/comuni</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/provincia/BG/comuni" target="_blank">https://comuni-istat-api.belicedigital.com/api/provincia/{sigla}/comuni</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Parametro: sigla della provincia (es. BG)</p>
                                         <p>Risposta: array</p>
@@ -141,7 +141,7 @@
                                 </h2>
                                 <div id="regioniCollapse" class="accordion-collapse collapse" aria-labelledby="regioni" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/regioni" target="_blank">https://comuni-istat-api.herokuapp.com/api/regioni</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/regioni" target="_blank">https://comuni-istat-api.belicedigital.com/api/regioni</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Risposta: array</p>
                                     </div>
@@ -155,7 +155,7 @@
                                 </h2>
                                 <div id="regioneComuniCollapse" class="accordion-collapse collapse" aria-labelledby="regioneComuni" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/regione/Lombardia/comuni" target="_blank">https://comuni-istat-api.herokuapp.com/api/regione/{regione}/comuni</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/regione/Lombardia/comuni" target="_blank">https://comuni-istat-api.belicedigital.com/api/regione/{regione}/comuni</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Parametro: nome della regione (es. Lombardia)</p>
                                         <p>Risposta: array</p>
@@ -170,7 +170,7 @@
                                 </h2>
                                 <div id="sigleAutoCollapse" class="accordion-collapse collapse" aria-labelledby="sigleAuto" data-bs-parent="#API">
                                     <div class="accordion-body bg-light">
-                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.herokuapp.com/api/sigle-auto" target="_blank">https://comuni-istat-api.herokuapp.com/api/sigle-auto</a></p>
+                                        <p class="lead"><a class="btn-link" href="https://comuni-istat-api.belicedigital.com/api/sigle-auto" target="_blank">https://comuni-istat-api.belicedigital.com/api/sigle-auto</a></p>
                                         <p>Schema: HTTP || HTTPS</p>
                                         <p>Risposta: array</p>
                                     </div>
